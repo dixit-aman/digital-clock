@@ -1,0 +1,42 @@
+<html>
+<head><title>DIGITAL CLOCK</title>
+    <link rel="stylesheet" type="text/css"
+          href="css/script.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    </head>
+<body id="background">
+    <header >
+    <div id="main">
+        </div>
+        <div id="day"></div>
+    
+    </header>
+    <script type="text/javascript" src="js/index.js"></script>
+    
+
+
+    
+    <input type="text" id="id1" placeholder="enter the city name">
+    
+    <input type="button" onclick="myfunction()" value="weather">
+    <script>
+    function myfunction()
+        {
+        var l=document.getElementById("id1").value;
+            
+            window.location="http://api.openweathermap.org/data/2.5/weather?q="+l+"&appid=f24f40b1c24505685fce3b8acd0fcffc&mode=html"  
+            
+            
+        }
+    
+    
+    </script>
+    
+    
+    
+    
+    </body>
+
+
+
+</html>
